@@ -21,13 +21,13 @@ body {
 
 .wrapper {
     width: calc(100% - 571px);
-    margin: 0 0 0 183px;   
+    margin: 0 auto;   
 }
 
 .logo {
-    line-height: 40px;
-    color: white;
+    margin: 4.5px -4px 0 0;
     float: left;
+    width: 28px;
 }
 
 .logo:hover { 
@@ -81,6 +81,15 @@ body {
      font-size: 21px;
 }
 
+.header__right i {
+    color: #1a2947;
+}
+
+.header__right i:hover {
+    color: #08101F;
+    ;
+}
+
 .header__right-border {
     float: right;
     border-right: 1px solid #365899;
@@ -115,24 +124,16 @@ body {
 
 .padd {
     padding: 0 7px;
-    color: #08101F;
 }
 
 .header__help {
     padding-left: 9px;
 }
 
-.header__friend-request {
-    color: #08101F;
-}
-
-.header__messages {
-    color: #08101F;
-}
+/* MAIN */
 
 .main {
-    margin-top: 14px;
-    
+    margin-top: 14px;    
 }
 
 .main__sidebar__left {
@@ -167,7 +168,7 @@ img {
     width: 18px;
     border-radius: 2px;
     vertical-align: middle;
-    margin-right: 3px;
+    margin: -3px 3px 0 0;
 }
 
 .main__sidebar__menu__profile:hover {
@@ -245,7 +246,7 @@ img {
 
 .main__content {
     width: 500px;
-    height: 3400px;
+    height: 1000px;
     float: left;
     margin: 0 12px;
 }
@@ -395,13 +396,14 @@ img {
 
 .main__content__news-body-header {
     font-size: 14px;
-    margin: 0 0 12px 12px;
+    margin: 0 0 5px 12px;
 
 }
 
 .main__content__news-body-img {
     width: 100%;
     height: 261px;
+    margin-top: 10px;
 }
 
 .main__content__news-footer1 {
@@ -593,4 +595,31 @@ img {
     width: 256px;
     height: auto;
     margin: -4px 0;
+}
+
+.friends-online {
+    position: fixed;
+    right: 100px;
+    bottom: 0;
+    width: 200px;
+    height: 15px;
+    background-color: #fff;
+    display: flex;
+    padding: 11px 2px 11px 12px;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0px 0px 3px -1px #888888;
+
+}
+
+.friends-online img {
+    width: 83px;
+    height: 28px;
+    margin-top: -6px;
+}
+
+.friends-online p {
+    font-weight: bold;
+    margin-right: 36px;
+    color: #616871;
+    font-size: 13px;
 }
